@@ -16,7 +16,7 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_15.4.app
 
     - name: Resolve Swift Packages
-      run: xcodebuild -resolvePackageDependencies -scheme zkoolz
+      run: xcodebuild -resolvePackageDependencies -scheme zkoolz -project zkoolz/zkoolz.xcodeproj
 
     - name: Build and test
       run: |
