@@ -16,15 +16,13 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_15.4.app
 
     - name: Resolve Swift Packages
-      run: xcodebuild -resolvePackageDependencies -scheme zkoolz 
-
-    # - name: Resolve Swift Packages
-    #   run: |
-    #     cd zkoolz
-    #     xcodebuild -resolvePackageDependencies -scheme zkoolz
+      run: |
+        cd zkoolz
+        xcodebuild -resolvePackageDependencies -scheme zkoolz
 
     - name: Build and test
       run: |
+        cd zkoolz 
         xcodebuild test \
           -scheme zkoolz \
           -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4'
