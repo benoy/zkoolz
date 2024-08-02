@@ -15,6 +15,10 @@ jobs:
     - name: Set up Xcode 15.4
       run: sudo xcode-select -switch /Applications/Xcode_15.4.app
 
+    - name: Install Provisioning Profile
+      run: |
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        echo "${{ secrets.ZKOOLZ_PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/comzkoolzezemp_dev.mobileprovision
   
     - name: Install Signing Certificate
       run: |
@@ -23,11 +27,6 @@ jobs:
         file Certificates.p12
         security import Certificates.p12 -k ~/Library/Keychains/login.keychain -A -T /usr/bin/codesign
       timeout-minutes: 20
-
-    - name: Install Provisioning Profile
-      run: |
-        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        echo "${{ secrets.ZKOOLZ_PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/comzkoolzezemp_dev.mobileprovision
 
     - name: Resolve Swift Packages
       run: |
