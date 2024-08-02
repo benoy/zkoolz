@@ -22,6 +22,7 @@ jobs:
 
     - name: Install Signing Certificate
       run: |
+        echo "${{ secrets.SIGNING_CERTIFICATE }}" | wc -c  # Debugging step to check length
         echo "${{ secrets.SIGNING_CERTIFICATE }}" | base64 --decode > signing_cert.p12
         security import signing_cert.p12 -k ~/Library/Keychains/login.keychain -P "${{ secrets.SIGNING_CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
 
