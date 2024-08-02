@@ -19,8 +19,8 @@ jobs:
       run: |
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
         echo "${{ secrets.ZKOOLZ_PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/comzkoolzezemp_dev.mobileprovision
-  
-     - name: Install Signing Certificate
+        
+    - name: Install Signing Certificate
       run: |
         echo "${{ secrets.ZKOOLZ_DEVELOPMENT_CERT }}" | base64 --decode > Certificates.p12
         ls -l Certificates.p12
