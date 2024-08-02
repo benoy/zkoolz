@@ -25,4 +25,5 @@ jobs:
         cd zkoolz 
         xcodebuild test \
           -scheme zkoolz \
-          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4'
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' \
+          -allowProvisioningUpdates
