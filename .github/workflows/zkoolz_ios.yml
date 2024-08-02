@@ -1,0 +1,44 @@
+name: Run XCTest
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Xcode 15.4
+      run: sudo xcode-select -switch /Applications/Xcode_15.4.app
+
+    - name: Install Provisioning Profile
+      run: |
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        echo "${{ secrets.ZKOOLZ_PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/comzkoolzezemp_dev.mobileprovision
+        
+    - name: Install Signing Certificate
+      run: |
+        echo "${{ secrets.ZKOOLZ_DEVELOPMENT_CERT }}" | base64 --decode > Certificates.p12
+        ls -l Certificates.p12
+        file Certificates.p12
+        security import Certificates.p12 -k ~/Library/Keychains/login.keychain -A -T /usr/bin/codesign
+        security list-keychains -s ~/Library/Keychains/login.keychain
+        security find-identity -v -p codesigning
+      timeout-minutes: 10
+
+    - name: Resolve Swift Packages
+      run: |
+        cd zkoolz
+        xcodebuild -resolvePackageDependencies -scheme zkoolz
+
+    - name: Build and test
+      run: |
+        cd zkoolz
+        xcodebuild test \
+          -scheme zkoolz \
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' \
+          -allowProvisioningUpdates
