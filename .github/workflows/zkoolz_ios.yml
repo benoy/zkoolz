@@ -22,7 +22,7 @@ jobs:
 
     - name: Install Signing Certificate
       run: |
-        echo "${{ secrets.SIGNING_CERTIFICATE }}" | base64 --decode > Certificates.p12
+        echo "${{ secrets.ZKOOLZ_DEVELOPMENT_CERT }}" | base64 --decode > Certificates.p12
         security import Certificates.p12 -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
 
     - name: Resolve Swift Packages
