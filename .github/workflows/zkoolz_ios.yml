@@ -27,7 +27,7 @@ jobs:
     - name: Install Provisioning Profile
       run: |
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/YourProvisioningProfile.mobileprovision
+        echo "${{ secrets.ZKOOLZ_PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/comzkoolzezemp_dev.mobileprovision
 
     - name: Resolve Swift Packages
       run: |
