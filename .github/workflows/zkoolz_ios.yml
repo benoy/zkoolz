@@ -20,23 +20,11 @@ jobs:
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
         echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/YourProvisioningProfile.mobileprovision
 
-    # - name: Install Signing Certificate
-    #   run: |
-    #     echo "${{ secrets.ZKOOLZ_DEVELOPMENT_CERT }}" | base64 --decode > Certificates.p12
-    #     security import Certificates.p12 -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
-
-
-
      - name: Install Signing Certificate
       run: |
-        # Decode the base64-encoded certificate
         echo "${{ secrets.ZKOOLZ_DEVELOPMENT_CERT }}" | base64 --decode > Certificates.p12
-
-        # Verify the certificate file
         ls -l Certificates.p12
         file Certificates.p12
-
-        # Import the certificate into the keychain
         security import Certificates.p12 -k ~/Library/Keychains/login.keychain -A -T /usr/bin/codesign
         timeout-minutes: 10 # Set a reasonable timeout for this step
       
