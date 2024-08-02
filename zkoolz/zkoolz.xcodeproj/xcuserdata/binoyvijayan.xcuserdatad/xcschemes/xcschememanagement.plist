@@ -28,7 +28,20 @@
 		<key>zkoolz.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>577503F82C5C68C800192A42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5779D1062C1C90870008F214</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -21,6 +21,7 @@
 		577503EE2C3B870800192A42 /* ZKSuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577503ED2C3B870800192A42 /* ZKSuggestionViewController.xib */; };
 		577503EF2C3B870800192A42 /* ZKSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577503EC2C3B870800192A42 /* ZKSuggestionViewController.swift */; };
 		577503F12C43A02300192A42 /* ZKSuggestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577503F02C43A02300192A42 /* ZKSuggestionViewModel.swift */; };
+		577503FC2C5C68C800192A42 /* zkoolzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577503FB2C5C68C800192A42 /* zkoolzTests.swift */; };
 		5776DEB72C2A6AAC0034C968 /* ZKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776DEB62C2A6AAC0034C968 /* ZKConstants.swift */; };
 		5776DEBA2C2AE9160034C968 /* ZKPhoneField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776DEB92C2AE9160034C968 /* ZKPhoneField.swift */; };
 		5779D10B2C1C90870008F214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D10A2C1C90870008F214 /* AppDelegate.swift */; };
@@ -71,6 +72,16 @@
 		5779D1832C26B0210008F214 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 5779D1822C26B0210008F214 /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		577503FD2C5C68C800192A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5779D0FF2C1C90870008F214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5779D1062C1C90870008F214;
+			remoteInfo = zkoolz;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		573304172C26DC250022D3DE /* ZKAdConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKAdConsentManager.swift; sourceTree = "<group>"; };
 		573304192C290FC10022D3DE /* HPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPickerView.swift; sourceTree = "<group>"; };
@@ -86,6 +97,8 @@
 		577503EC2C3B870800192A42 /* ZKSuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSuggestionViewController.swift; sourceTree = "<group>"; };
 		577503ED2C3B870800192A42 /* ZKSuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZKSuggestionViewController.xib; sourceTree = "<group>"; };
 		577503F02C43A02300192A42 /* ZKSuggestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSuggestionViewModel.swift; sourceTree = "<group>"; };
+		577503F92C5C68C800192A42 /* zkoolzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zkoolzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		577503FB2C5C68C800192A42 /* zkoolzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zkoolzTests.swift; sourceTree = "<group>"; };
 		5776DEB62C2A6AAC0034C968 /* ZKConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKConstants.swift; sourceTree = "<group>"; };
 		5776DEB92C2AE9160034C968 /* ZKPhoneField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKPhoneField.swift; sourceTree = "<group>"; };
 		5779D1072C1C90870008F214 /* zkoolz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zkoolz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +149,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		577503F62C5C68C800192A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5779D1042C1C90870008F214 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,6 +202,14 @@
 			path = Picker;
 			sourceTree = "<group>";
 		};
+		577503FA2C5C68C800192A42 /* zkoolzTests */ = {
+			isa = PBXGroup;
+			children = (
+				577503FB2C5C68C800192A42 /* zkoolzTests.swift */,
+			);
+			path = zkoolzTests;
+			sourceTree = "<group>";
+		};
 		5776DEB82C2AE8E30034C968 /* ZKViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +223,7 @@
 			children = (
 				5779D11E2C1C913C0008F214 /* GoogleService-Info.plist */,
 				5779D1092C1C90870008F214 /* zkoolz */,
+				577503FA2C5C68C800192A42 /* zkoolzTests */,
 				5779D1082C1C90870008F214 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				5779D1072C1C90870008F214 /* zkoolz.app */,
+				577503F92C5C68C800192A42 /* zkoolzTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,6 +361,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		577503F82C5C68C800192A42 /* zkoolzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577504012C5C68C800192A42 /* Build configuration list for PBXNativeTarget "zkoolzTests" */;
+			buildPhases = (
+				577503F52C5C68C800192A42 /* Sources */,
+				577503F62C5C68C800192A42 /* Frameworks */,
+				577503F72C5C68C800192A42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577503FE2C5C68C800192A42 /* PBXTargetDependency */,
+			);
+			name = zkoolzTests;
+			productName = zkoolzTests;
+			productReference = 577503F92C5C68C800192A42 /* zkoolzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5779D1062C1C90870008F214 /* zkoolz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5779D11B2C1C90890008F214 /* Build configuration list for PBXNativeTarget "zkoolz" */;
@@ -363,6 +411,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					577503F82C5C68C800192A42 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5779D1062C1C90870008F214;
+					};
 					5779D1062C1C90870008F214 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -386,11 +438,19 @@
 			projectRoot = "";
 			targets = (
 				5779D1062C1C90870008F214 /* zkoolz */,
+				577503F82C5C68C800192A42 /* zkoolzTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		577503F72C5C68C800192A42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5779D1052C1C90870008F214 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,6 +473,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		577503F52C5C68C800192A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577503FC2C5C68C800192A42 /* zkoolzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5779D1032C1C90870008F214 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,6 +537,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		577503FE2C5C68C800192A42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5779D1062C1C90870008F214 /* zkoolz */;
+			targetProxy = 577503FD2C5C68C800192A42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		5779D1152C1C90890008F214 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -481,6 +557,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		577503FF2C5C68C800192A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94884BD926;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezemp.zkoolzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zkoolz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zkoolz";
+			};
+			name = Debug;
+		};
+		577504002C5C68C800192A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94884BD926;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezemp.zkoolzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zkoolz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zkoolz";
+			};
+			name = Release;
+		};
 		5779D1192C1C90890008F214 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -659,6 +771,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		577504012C5C68C800192A42 /* Build configuration list for PBXNativeTarget "zkoolzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577503FF2C5C68C800192A42 /* Debug */,
+				577504002C5C68C800192A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5779D1022C1C90870008F214 /* Build configuration list for PBXProject "zkoolz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
