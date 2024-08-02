@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		573304182C26DC250022D3DE /* ZKAdConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573304172C26DC250022D3DE /* ZKAdConsentManager.swift */; };
+		573304222C290FC10022D3DE /* HPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573304192C290FC10022D3DE /* HPickerView.swift */; };
+		573304232C290FC10022D3DE /* HPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5733041A2C290FC10022D3DE /* HPickerView.xib */; };
+		573304242C290FC10022D3DE /* VPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733041C2C290FC10022D3DE /* VPickerView.swift */; };
+		573304252C290FC10022D3DE /* VPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5733041D2C290FC10022D3DE /* VPickerView.xib */; };
+		573304262C290FC10022D3DE /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733041F2C290FC10022D3DE /* PickerCell.swift */; };
+		573304272C290FC10022D3DE /* PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 573304202C290FC10022D3DE /* PickerCell.xib */; };
+		573304292C2981830022D3DE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573304282C2981820022D3DE /* BaseView.swift */; };
+		5733042D2C2982570022D3DE /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733042A2C2982570022D3DE /* BaseCollectionViewCell.swift */; };
+		5733042E2C2982570022D3DE /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733042B2C2982570022D3DE /* BaseTableCell.swift */; };
+		5733042F2C2982570022D3DE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733042C2C2982570022D3DE /* BaseViewController.swift */; };
+		577503EE2C3B870800192A42 /* ZKSuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577503ED2C3B870800192A42 /* ZKSuggestionViewController.xib */; };
+		577503EF2C3B870800192A42 /* ZKSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577503EC2C3B870800192A42 /* ZKSuggestionViewController.swift */; };
+		577503F12C43A02300192A42 /* ZKSuggestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577503F02C43A02300192A42 /* ZKSuggestionViewModel.swift */; };
+		5776DEB72C2A6AAC0034C968 /* ZKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776DEB62C2A6AAC0034C968 /* ZKConstants.swift */; };
+		5776DEBA2C2AE9160034C968 /* ZKPhoneField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776DEB92C2AE9160034C968 /* ZKPhoneField.swift */; };
+		5779D10B2C1C90870008F214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D10A2C1C90870008F214 /* AppDelegate.swift */; };
+		5779D10D2C1C90870008F214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D10C2C1C90870008F214 /* SceneDelegate.swift */; };
+		5779D1142C1C90890008F214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5779D1132C1C90890008F214 /* Assets.xcassets */; };
+		5779D1172C1C90890008F214 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5779D1162C1C90890008F214 /* Base */; };
+		5779D11F2C1C913C0008F214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5779D11E2C1C913C0008F214 /* GoogleService-Info.plist */; };
+		5779D1222C1C93910008F214 /* ZKAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1212C1C93910008F214 /* ZKAppController.swift */; };
+		5779D1272C1C95D90008F214 /* ZKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1262C1C95D90008F214 /* ZKBaseViewController.swift */; };
+		5779D12E2C1C988F0008F214 /* ZKHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5779D12D2C1C988F0008F214 /* ZKHomeViewController.xib */; };
+		5779D12F2C1C988F0008F214 /* ZKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D12C2C1C988F0008F214 /* ZKHomeViewController.swift */; };
+		5779D1312C1C9BF60008F214 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5779D1302C1C9BF60008F214 /* FirebaseFirestore */; };
+		5779D1342C1C9D350008F214 /* ZKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5779D1322C1C9D350008F214 /* ZKLoginViewController.xib */; };
+		5779D1352C1C9D350008F214 /* ZKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1332C1C9D350008F214 /* ZKLoginViewController.swift */; };
+		5779D1372C1C9E110008F214 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5779D1362C1C9E110008F214 /* FirebaseAuth */; };
+		5779D1472C1C9E630008F214 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1382C1C9E630008F214 /* Button.swift */; };
+		5779D1482C1C9E630008F214 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1392C1C9E630008F214 /* Color.swift */; };
+		5779D1492C1C9E630008F214 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D13A2C1C9E630008F214 /* Date.swift */; };
+		5779D14A2C1C9E630008F214 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D13B2C1C9E630008F214 /* SearchBar.swift */; };
+		5779D14B2C1C9E630008F214 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D13C2C1C9E630008F214 /* String.swift */; };
+		5779D14C2C1C9E630008F214 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D13D2C1C9E630008F214 /* View.swift */; };
+		5779D14E2C1C9E630008F214 /* MDDateInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1402C1C9E630008F214 /* MDDateInputField.swift */; };
+		5779D14F2C1C9E630008F214 /* MDOtpField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1412C1C9E630008F214 /* MDOtpField.swift */; };
+		5779D1502C1C9E630008F214 /* MDPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1422C1C9E630008F214 /* MDPopupView.swift */; };
+		5779D1512C1C9E630008F214 /* MDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1432C1C9E630008F214 /* MDTextField.swift */; };
+		5779D1522C1C9E630008F214 /* MDTextFieldCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1442C1C9E630008F214 /* MDTextFieldCustomizable.swift */; };
+		5779D1542C1CB7170008F214 /* ZKDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1532C1CB7170008F214 /* ZKDBManager.swift */; };
+		5779D1572C1CB7970008F214 /* ZKFireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1562C1CB7970008F214 /* ZKFireModel.swift */; };
+		5779D1592C1CB8D00008F214 /* ZKAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1582C1CB8D00008F214 /* ZKAuthenticator.swift */; };
+		5779D15B2C1CC1620008F214 /* ZKLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D15A2C1CC1620008F214 /* ZKLoginViewModel.swift */; };
+		5779D15D2C1D12EA0008F214 /* ZKGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D15C2C1D12EA0008F214 /* ZKGlobal.swift */; };
+		5779D1602C1D1D1E0008F214 /* ZKGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5779D15F2C1D1D1E0008F214 /* ZKGameViewController.xib */; };
+		5779D1612C1D1D1E0008F214 /* ZKGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D15E2C1D1D1E0008F214 /* ZKGameViewController.swift */; };
+		5779D1632C1DD77F0008F214 /* FireDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1622C1DD77F0008F214 /* FireDB.swift */; };
+		5779D1652C1E7CB40008F214 /* ZKGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1642C1E7CB40008F214 /* ZKGameViewModel.swift */; };
+		5779D1672C1E7CCF0008F214 /* ZKGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1662C1E7CCF0008F214 /* ZKGameEngine.swift */; };
+		5779D1692C2128380008F214 /* ZKHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1682C2128380008F214 /* ZKHttpClient.swift */; };
+		5779D16B2C213D170008F214 /* ZKAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D16A2C213D170008F214 /* ZKAPIManager.swift */; };
+		5779D16D2C213ED70008F214 /* ZKAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D16C2C213ED70008F214 /* ZKAPIModel.swift */; };
+		5779D1732C2257DF0008F214 /* ZKHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5779D1722C2257DF0008F214 /* ZKHomeCell.xib */; };
+		5779D1742C2257DF0008F214 /* ZKHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1712C2257DF0008F214 /* ZKHomeCell.swift */; };
+		5779D1762C2258240008F214 /* ZKBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1752C2258240008F214 /* ZKBaseCell.swift */; };
+		5779D1782C225C440008F214 /* ZKHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1772C225C440008F214 /* ZKHomeViewModel.swift */; };
+		5779D17A2C23BC3A0008F214 /* ZKGameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D1792C23BC3A0008F214 /* ZKGameConfig.swift */; };
+		5779D17C2C2511BE0008F214 /* ZKOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D17B2C2511BE0008F214 /* ZKOverlayView.swift */; };
+		5779D17E2C2511D30008F214 /* ZKOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5779D17D2C2511D30008F214 /* ZKOverlayView.xib */; };
+		5779D1802C2512730008F214 /* ZKCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D17F2C2512730008F214 /* ZKCustomView.swift */; };
+		5779D1832C26B0210008F214 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 5779D1822C26B0210008F214 /* GoogleMobileAds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		573304172C26DC250022D3DE /* ZKAdConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKAdConsentManager.swift; sourceTree = "<group>"; };
+		573304192C290FC10022D3DE /* HPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPickerView.swift; sourceTree = "<group>"; };
+		5733041A2C290FC10022D3DE /* HPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPickerView.xib; sourceTree = "<group>"; };
+		5733041C2C290FC10022D3DE /* VPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPickerView.swift; sourceTree = "<group>"; };
+		5733041D2C290FC10022D3DE /* VPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPickerView.xib; sourceTree = "<group>"; };
+		5733041F2C290FC10022D3DE /* PickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
+		573304202C290FC10022D3DE /* PickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerCell.xib; sourceTree = "<group>"; };
+		573304282C2981820022D3DE /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		5733042A2C2982570022D3DE /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		5733042B2C2982570022D3DE /* BaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		5733042C2C2982570022D3DE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		577503EC2C3B870800192A42 /* ZKSuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSuggestionViewController.swift; sourceTree = "<group>"; };
+		577503ED2C3B870800192A42 /* ZKSuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZKSuggestionViewController.xib; sourceTree = "<group>"; };
+		577503F02C43A02300192A42 /* ZKSuggestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSuggestionViewModel.swift; sourceTree = "<group>"; };
+		5776DEB62C2A6AAC0034C968 /* ZKConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKConstants.swift; sourceTree = "<group>"; };
+		5776DEB92C2AE9160034C968 /* ZKPhoneField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKPhoneField.swift; sourceTree = "<group>"; };
+		5779D1072C1C90870008F214 /* zkoolz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zkoolz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5779D10A2C1C90870008F214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5779D10C2C1C90870008F214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5779D1132C1C90890008F214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5779D1162C1C90890008F214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5779D1182C1C90890008F214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5779D11E2C1C913C0008F214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5779D1212C1C93910008F214 /* ZKAppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKAppController.swift; sourceTree = "<group>"; };
+		5779D1262C1C95D90008F214 /* ZKBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseViewController.swift; sourceTree = "<group>"; };
+		5779D12C2C1C988F0008F214 /* ZKHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKHomeViewController.swift; sourceTree = "<group>"; };
+		5779D12D2C1C988F0008F214 /* ZKHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZKHomeViewController.xib; sourceTree = "<group>"; };
+		5779D1322C1C9D350008F214 /* ZKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKLoginViewController.xib; sourceTree = "<group>"; };
+		5779D1332C1C9D350008F214 /* ZKLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKLoginViewController.swift; sourceTree = "<group>"; };
+		5779D1382C1C9E630008F214 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		5779D1392C1C9E630008F214 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5779D13A2C1C9E630008F214 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5779D13B2C1C9E630008F214 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5779D13C2C1C9E630008F214 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		5779D13D2C1C9E630008F214 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5779D1402C1C9E630008F214 /* MDDateInputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDDateInputField.swift; sourceTree = "<group>"; };
+		5779D1412C1C9E630008F214 /* MDOtpField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDOtpField.swift; sourceTree = "<group>"; };
+		5779D1422C1C9E630008F214 /* MDPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPopupView.swift; sourceTree = "<group>"; };
+		5779D1432C1C9E630008F214 /* MDTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDTextField.swift; sourceTree = "<group>"; };
+		5779D1442C1C9E630008F214 /* MDTextFieldCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDTextFieldCustomizable.swift; sourceTree = "<group>"; };
+		5779D1532C1CB7170008F214 /* ZKDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKDBManager.swift; sourceTree = "<group>"; };
+		5779D1562C1CB7970008F214 /* ZKFireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKFireModel.swift; sourceTree = "<group>"; };
+		5779D1582C1CB8D00008F214 /* ZKAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKAuthenticator.swift; sourceTree = "<group>"; };
+		5779D15A2C1CC1620008F214 /* ZKLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKLoginViewModel.swift; sourceTree = "<group>"; };
+		5779D15C2C1D12EA0008F214 /* ZKGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKGlobal.swift; sourceTree = "<group>"; };
+		5779D15E2C1D1D1E0008F214 /* ZKGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKGameViewController.swift; sourceTree = "<group>"; };
+		5779D15F2C1D1D1E0008F214 /* ZKGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZKGameViewController.xib; sourceTree = "<group>"; };
+		5779D1622C1DD77F0008F214 /* FireDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDB.swift; sourceTree = "<group>"; };
+		5779D1642C1E7CB40008F214 /* ZKGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKGameViewModel.swift; sourceTree = "<group>"; };
+		5779D1662C1E7CCF0008F214 /* ZKGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKGameEngine.swift; sourceTree = "<group>"; };
+		5779D1682C2128380008F214 /* ZKHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKHttpClient.swift; sourceTree = "<group>"; };
+		5779D16A2C213D170008F214 /* ZKAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKAPIManager.swift; sourceTree = "<group>"; };
+		5779D16C2C213ED70008F214 /* ZKAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKAPIModel.swift; sourceTree = "<group>"; };
+		5779D1712C2257DF0008F214 /* ZKHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKHomeCell.swift; sourceTree = "<group>"; };
+		5779D1722C2257DF0008F214 /* ZKHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZKHomeCell.xib; sourceTree = "<group>"; };
+		5779D1752C2258240008F214 /* ZKBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseCell.swift; sourceTree = "<group>"; };
+		5779D1772C225C440008F214 /* ZKHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKHomeViewModel.swift; sourceTree = "<group>"; };
+		5779D1792C23BC3A0008F214 /* ZKGameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKGameConfig.swift; sourceTree = "<group>"; };
+		5779D17B2C2511BE0008F214 /* ZKOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKOverlayView.swift; sourceTree = "<group>"; };
+		5779D17D2C2511D30008F214 /* ZKOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZKOverlayView.xib; sourceTree = "<group>"; };
+		5779D17F2C2512730008F214 /* ZKCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKCustomView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5779D1042C1C90870008F214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5779D1832C26B0210008F214 /* GoogleMobileAds in Frameworks */,
+				5779D1312C1C9BF60008F214 /* FirebaseFirestore in Frameworks */,
+				5779D1372C1C9E110008F214 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5733041B2C290FC10022D3DE /* HPicker */ = {
+			isa = PBXGroup;
+			children = (
+				573304192C290FC10022D3DE /* HPickerView.swift */,
+				5733041A2C290FC10022D3DE /* HPickerView.xib */,
+			);
+			path = HPicker;
+			sourceTree = "<group>";
+		};
+		5733041E2C290FC10022D3DE /* VPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5733041C2C290FC10022D3DE /* VPickerView.swift */,
+				5733041D2C290FC10022D3DE /* VPickerView.xib */,
+			);
+			path = VPicker;
+			sourceTree = "<group>";
+		};
+		573304212C290FC10022D3DE /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				5733042A2C2982570022D3DE /* BaseCollectionViewCell.swift */,
+				5733042B2C2982570022D3DE /* BaseTableCell.swift */,
+				5733042C2C2982570022D3DE /* BaseViewController.swift */,
+				573304282C2981820022D3DE /* BaseView.swift */,
+				5733041B2C290FC10022D3DE /* HPicker */,
+				5733041E2C290FC10022D3DE /* VPicker */,
+				5733041F2C290FC10022D3DE /* PickerCell.swift */,
+				573304202C290FC10022D3DE /* PickerCell.xib */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		5776DEB82C2AE8E30034C968 /* ZKViews */ = {
+			isa = PBXGroup;
+			children = (
+				5776DEB92C2AE9160034C968 /* ZKPhoneField.swift */,
+			);
+			path = ZKViews;
+			sourceTree = "<group>";
+		};
+		5779D0FE2C1C90870008F214 = {
+			isa = PBXGroup;
+			children = (
+				5779D11E2C1C913C0008F214 /* GoogleService-Info.plist */,
+				5779D1092C1C90870008F214 /* zkoolz */,
+				5779D1082C1C90870008F214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5779D1082C1C90870008F214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1072C1C90870008F214 /* zkoolz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5779D1092C1C90870008F214 /* zkoolz */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1242C1C95A50008F214 /* UI */,
+				5779D1232C1C95930008F214 /* NonUI */,
+				5779D10A2C1C90870008F214 /* AppDelegate.swift */,
+				5779D10C2C1C90870008F214 /* SceneDelegate.swift */,
+				5779D1132C1C90890008F214 /* Assets.xcassets */,
+				5779D1152C1C90890008F214 /* LaunchScreen.storyboard */,
+				5779D1182C1C90890008F214 /* Info.plist */,
+			);
+			path = zkoolz;
+			sourceTree = "<group>";
+		};
+		5779D1232C1C95930008F214 /* NonUI */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1552C1CB7850008F214 /* Model */,
+				5779D1212C1C93910008F214 /* ZKAppController.swift */,
+				5779D1532C1CB7170008F214 /* ZKDBManager.swift */,
+				5779D1582C1CB8D00008F214 /* ZKAuthenticator.swift */,
+				5779D15C2C1D12EA0008F214 /* ZKGlobal.swift */,
+				5779D1622C1DD77F0008F214 /* FireDB.swift */,
+				5779D1662C1E7CCF0008F214 /* ZKGameEngine.swift */,
+				5779D1682C2128380008F214 /* ZKHttpClient.swift */,
+				5779D16A2C213D170008F214 /* ZKAPIManager.swift */,
+				5779D1792C23BC3A0008F214 /* ZKGameConfig.swift */,
+				573304172C26DC250022D3DE /* ZKAdConsentManager.swift */,
+				5776DEB62C2A6AAC0034C968 /* ZKConstants.swift */,
+			);
+			path = NonUI;
+			sourceTree = "<group>";
+		};
+		5779D1242C1C95A50008F214 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5779D16E2C21E6980008F214 /* CutomViews */,
+				5779D1462C1C9E630008F214 /* UI Compms */,
+				5779D1252C1C95AB0008F214 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5779D1252C1C95AB0008F214 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5779D15A2C1CC1620008F214 /* ZKLoginViewModel.swift */,
+				5779D1332C1C9D350008F214 /* ZKLoginViewController.swift */,
+				5779D1322C1C9D350008F214 /* ZKLoginViewController.xib */,
+				5779D1262C1C95D90008F214 /* ZKBaseViewController.swift */,
+				5779D12C2C1C988F0008F214 /* ZKHomeViewController.swift */,
+				5779D12D2C1C988F0008F214 /* ZKHomeViewController.xib */,
+				5779D15E2C1D1D1E0008F214 /* ZKGameViewController.swift */,
+				5779D15F2C1D1D1E0008F214 /* ZKGameViewController.xib */,
+				5779D1642C1E7CB40008F214 /* ZKGameViewModel.swift */,
+				5779D1772C225C440008F214 /* ZKHomeViewModel.swift */,
+				577503EC2C3B870800192A42 /* ZKSuggestionViewController.swift */,
+				577503ED2C3B870800192A42 /* ZKSuggestionViewController.xib */,
+				577503F02C43A02300192A42 /* ZKSuggestionViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5779D13E2C1C9E630008F214 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1382C1C9E630008F214 /* Button.swift */,
+				5779D1392C1C9E630008F214 /* Color.swift */,
+				5779D13A2C1C9E630008F214 /* Date.swift */,
+				5779D13B2C1C9E630008F214 /* SearchBar.swift */,
+				5779D13C2C1C9E630008F214 /* String.swift */,
+				5779D13D2C1C9E630008F214 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5779D1452C1C9E630008F214 /* MDViews */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1402C1C9E630008F214 /* MDDateInputField.swift */,
+				5779D1412C1C9E630008F214 /* MDOtpField.swift */,
+				5779D1422C1C9E630008F214 /* MDPopupView.swift */,
+				5779D1432C1C9E630008F214 /* MDTextField.swift */,
+				5779D1442C1C9E630008F214 /* MDTextFieldCustomizable.swift */,
+				5779D17B2C2511BE0008F214 /* ZKOverlayView.swift */,
+				5779D17D2C2511D30008F214 /* ZKOverlayView.xib */,
+				5779D17F2C2512730008F214 /* ZKCustomView.swift */,
+			);
+			path = MDViews;
+			sourceTree = "<group>";
+		};
+		5779D1462C1C9E630008F214 /* UI Compms */ = {
+			isa = PBXGroup;
+			children = (
+				5776DEB82C2AE8E30034C968 /* ZKViews */,
+				573304212C290FC10022D3DE /* Picker */,
+				5779D13E2C1C9E630008F214 /* Extensions */,
+				5779D1452C1C9E630008F214 /* MDViews */,
+			);
+			path = "UI Compms";
+			sourceTree = "<group>";
+		};
+		5779D1552C1CB7850008F214 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1562C1CB7970008F214 /* ZKFireModel.swift */,
+				5779D16C2C213ED70008F214 /* ZKAPIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5779D16E2C21E6980008F214 /* CutomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5779D1712C2257DF0008F214 /* ZKHomeCell.swift */,
+				5779D1722C2257DF0008F214 /* ZKHomeCell.xib */,
+				5779D1752C2258240008F214 /* ZKBaseCell.swift */,
+			);
+			path = CutomViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5779D1062C1C90870008F214 /* zkoolz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5779D11B2C1C90890008F214 /* Build configuration list for PBXNativeTarget "zkoolz" */;
+			buildPhases = (
+				5779D1032C1C90870008F214 /* Sources */,
+				5779D1042C1C90870008F214 /* Frameworks */,
+				5779D1052C1C90870008F214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zkoolz;
+			packageProductDependencies = (
+				5779D1302C1C9BF60008F214 /* FirebaseFirestore */,
+				5779D1362C1C9E110008F214 /* FirebaseAuth */,
+				5779D1822C26B0210008F214 /* GoogleMobileAds */,
+			);
+			productName = zkoolz;
+			productReference = 5779D1072C1C90870008F214 /* zkoolz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5779D0FF2C1C90870008F214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5779D1062C1C90870008F214 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 5779D1022C1C90870008F214 /* Build configuration list for PBXProject "zkoolz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5779D0FE2C1C90870008F214;
+			packageReferences = (
+				5779D1202C1C92310008F214 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5779D1812C26B0210008F214 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 5779D1082C1C90870008F214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5779D1062C1C90870008F214 /* zkoolz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5779D1052C1C90870008F214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5779D1732C2257DF0008F214 /* ZKHomeCell.xib in Resources */,
+				5779D1142C1C90890008F214 /* Assets.xcassets in Resources */,
+				5779D11F2C1C913C0008F214 /* GoogleService-Info.plist in Resources */,
+				577503EE2C3B870800192A42 /* ZKSuggestionViewController.xib in Resources */,
+				5779D12E2C1C988F0008F214 /* ZKHomeViewController.xib in Resources */,
+				5779D17E2C2511D30008F214 /* ZKOverlayView.xib in Resources */,
+				5779D1172C1C90890008F214 /* Base in Resources */,
+				573304272C290FC10022D3DE /* PickerCell.xib in Resources */,
+				5779D1342C1C9D350008F214 /* ZKLoginViewController.xib in Resources */,
+				573304232C290FC10022D3DE /* HPickerView.xib in Resources */,
+				5779D1602C1D1D1E0008F214 /* ZKGameViewController.xib in Resources */,
+				573304252C290FC10022D3DE /* VPickerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5779D1032C1C90870008F214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5779D1472C1C9E630008F214 /* Button.swift in Sources */,
+				5779D1692C2128380008F214 /* ZKHttpClient.swift in Sources */,
+				5776DEBA2C2AE9160034C968 /* ZKPhoneField.swift in Sources */,
+				5779D1512C1C9E630008F214 /* MDTextField.swift in Sources */,
+				5779D14B2C1C9E630008F214 /* String.swift in Sources */,
+				5779D1612C1D1D1E0008F214 /* ZKGameViewController.swift in Sources */,
+				5779D1272C1C95D90008F214 /* ZKBaseViewController.swift in Sources */,
+				5779D1652C1E7CB40008F214 /* ZKGameViewModel.swift in Sources */,
+				5779D1352C1C9D350008F214 /* ZKLoginViewController.swift in Sources */,
+				5779D1672C1E7CCF0008F214 /* ZKGameEngine.swift in Sources */,
+				5733042E2C2982570022D3DE /* BaseTableCell.swift in Sources */,
+				573304262C290FC10022D3DE /* PickerCell.swift in Sources */,
+				5779D16D2C213ED70008F214 /* ZKAPIModel.swift in Sources */,
+				5779D12F2C1C988F0008F214 /* ZKHomeViewController.swift in Sources */,
+				5733042F2C2982570022D3DE /* BaseViewController.swift in Sources */,
+				5779D1762C2258240008F214 /* ZKBaseCell.swift in Sources */,
+				5779D17A2C23BC3A0008F214 /* ZKGameConfig.swift in Sources */,
+				573304222C290FC10022D3DE /* HPickerView.swift in Sources */,
+				577503F12C43A02300192A42 /* ZKSuggestionViewModel.swift in Sources */,
+				5779D10B2C1C90870008F214 /* AppDelegate.swift in Sources */,
+				573304242C290FC10022D3DE /* VPickerView.swift in Sources */,
+				5779D1482C1C9E630008F214 /* Color.swift in Sources */,
+				5779D10D2C1C90870008F214 /* SceneDelegate.swift in Sources */,
+				573304292C2981830022D3DE /* BaseView.swift in Sources */,
+				5779D1802C2512730008F214 /* ZKCustomView.swift in Sources */,
+				5779D14E2C1C9E630008F214 /* MDDateInputField.swift in Sources */,
+				5779D1742C2257DF0008F214 /* ZKHomeCell.swift in Sources */,
+				5779D14F2C1C9E630008F214 /* MDOtpField.swift in Sources */,
+				5779D14C2C1C9E630008F214 /* View.swift in Sources */,
+				5779D16B2C213D170008F214 /* ZKAPIManager.swift in Sources */,
+				5779D1522C1C9E630008F214 /* MDTextFieldCustomizable.swift in Sources */,
+				5779D14A2C1C9E630008F214 /* SearchBar.swift in Sources */,
+				5779D1782C225C440008F214 /* ZKHomeViewModel.swift in Sources */,
+				5733042D2C2982570022D3DE /* BaseCollectionViewCell.swift in Sources */,
+				5779D1632C1DD77F0008F214 /* FireDB.swift in Sources */,
+				5779D17C2C2511BE0008F214 /* ZKOverlayView.swift in Sources */,
+				5779D1502C1C9E630008F214 /* MDPopupView.swift in Sources */,
+				5779D15B2C1CC1620008F214 /* ZKLoginViewModel.swift in Sources */,
+				5779D15D2C1D12EA0008F214 /* ZKGlobal.swift in Sources */,
+				5779D1542C1CB7170008F214 /* ZKDBManager.swift in Sources */,
+				5779D1572C1CB7970008F214 /* ZKFireModel.swift in Sources */,
+				577503EF2C3B870800192A42 /* ZKSuggestionViewController.swift in Sources */,
+				5779D1492C1C9E630008F214 /* Date.swift in Sources */,
+				5776DEB72C2A6AAC0034C968 /* ZKConstants.swift in Sources */,
+				573304182C26DC250022D3DE /* ZKAdConsentManager.swift in Sources */,
+				5779D1592C1CB8D00008F214 /* ZKAuthenticator.swift in Sources */,
+				5779D1222C1C93910008F214 /* ZKAppController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5779D1152C1C90890008F214 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5779D1162C1C90890008F214 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5779D1192C1C90890008F214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5779D11A2C1C90890008F214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5779D11C2C1C90890008F214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94884BD926;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = zkoolz/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to auto-select your country code";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zkoolz.ezemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5779D11D2C1C90890008F214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94884BD926;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = zkoolz/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to auto-select your country code";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zkoolz.ezemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5779D1022C1C90870008F214 /* Build configuration list for PBXProject "zkoolz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5779D1192C1C90890008F214 /* Debug */,
+				5779D11A2C1C90890008F214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5779D11B2C1C90890008F214 /* Build configuration list for PBXNativeTarget "zkoolz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5779D11C2C1C90890008F214 /* Debug */,
+				5779D11D2C1C90890008F214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5779D1202C1C92310008F214 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+		5779D1812C26B0210008F214 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5779D1302C1C9BF60008F214 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5779D1202C1C92310008F214 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5779D1362C1C9E110008F214 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5779D1202C1C92310008F214 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5779D1822C26B0210008F214 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5779D1812C26B0210008F214 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5779D0FF2C1C90870008F214 /* Project object */;
+}

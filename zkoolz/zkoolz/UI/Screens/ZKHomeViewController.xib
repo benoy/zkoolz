@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZKHomeViewController" customModule="zkoolz" customModuleProvider="target">
+            <connections>
+                <outlet property="tableVIew" destination="apa-Kb-H0r" id="eN1-kq-B9s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lb-gd-F39">
+                    <rect key="frame" x="16" y="119" width="361" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <color key="textColor" red="0.71113885309278357" green="0.0087057740978748899" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="apa-Kb-H0r">
+                    <rect key="frame" x="16" y="178" width="361" height="656"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4rH-bS-rZK"/>
+                        <outlet property="delegate" destination="-1" id="V7n-In-A7R"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.81176470588235294" green="0.70980392156862748" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="apa-Kb-H0r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3CQ-bX-5x1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4lb-gd-F39" secondAttribute="trailing" constant="16" id="Pfq-Oq-uvE"/>
+                <constraint firstItem="4lb-gd-F39" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="Qel-iI-Bct"/>
+                <constraint firstItem="apa-Kb-H0r" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="16" id="hQH-u1-fPE"/>
+                <constraint firstItem="4lb-gd-F39" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="j4l-ZQ-ObP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="apa-Kb-H0r" secondAttribute="trailing" constant="16" id="m4w-xD-5Of"/>
+                <constraint firstItem="apa-Kb-H0r" firstAttribute="top" secondItem="4lb-gd-F39" secondAttribute="bottom" constant="16" id="rkW-eC-gfr"/>
+            </constraints>
+            <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>

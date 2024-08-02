@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "05497B44-56E4-4EDC-B079-AC2F83051480"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6017748-0DEE-4EFD-BF6D-0A4B9A15EDFB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zkoolz/NonUI/FireDB.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "addDataWith(path:data:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4167AE46-B254-48AB-84AF-9789CB0706C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zkoolz/NonUI/FireDB.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "dataFor(path:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4167AE46-B254-48AB-84AF-9789CB0706C0 - 59c34e3f083c0abd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.CheckedContinuation&lt;Swift.Optional&lt;(Swift.Optional&lt;Any&gt;, Swift.Optional&lt;zkoolz.FireDBError&gt;)&gt;, Swift.Error&gt;) -&gt; () in zkoolz.FireDB.dataFor(path: Swift.String) async -&gt; Swift.Optional&lt;(Swift.Optional&lt;Any&gt;, Swift.Optional&lt;zkoolz.FireDBError&gt;)&gt;"
+                  moduleName = "zkoolz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/binoyvijayan/Projects/Personal/EZT/Project/Apps/zkoolz/zkoolz/zkoolz/NonUI/FireDB.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135">
+               </Location>
+               <Location
+                  uuid = "4167AE46-B254-48AB-84AF-9789CB0706C0 - 5e20b3aa20d289aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #2 (Swift.CheckedContinuation&lt;Swift.Optional&lt;(Swift.Optional&lt;Any&gt;, Swift.Optional&lt;zkoolz.FireDBError&gt;)&gt;, Swift.Error&gt;) -&gt; () in zkoolz.FireDB.dataFor(path: Swift.String) async -&gt; Swift.Optional&lt;(Swift.Optional&lt;Any&gt;, Swift.Optional&lt;zkoolz.FireDBError&gt;)&gt;"
+                  moduleName = "zkoolz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/binoyvijayan/Projects/Personal/EZT/Project/Apps/zkoolz/zkoolz/zkoolz/NonUI/FireDB.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
